@@ -1,14 +1,14 @@
-header .holder{
+main .holder{
 	align-content: center;
 	background-color: #17579C;
 	padding: 0.3em 0;
 	height: 175px;
-	width: 960px;
-	margin: 0 auto;
-	  position: relative;
-  left: 10px;
-  right: 0;
-  z-index: 99;
+	width: 96px;
+	margin: 10 10 10 10 ;
+	position: relative;
+	left: 100px;
+	right: 500;
+	z-index: 99;
 
 }
 h1{
@@ -35,15 +35,12 @@ h3{
 	padding-top: 10px;
 	left: 125px
 }
-header .busqueda{
-	float: right;
-	padding-right: 12px;
-}
+
 main {
 	background-color: #ccc;
 	clear: both;
 	color: #333;
-	width: 960px;
+	width: 96px;
 	margin: 0 auto;
 	min-height : 70vh;
 }
@@ -56,11 +53,4 @@ main div div.contenedor-flex2{
 	background-color: whitesmoke;
 	flex-direction: row;
 	justify-content: center;
-}
-main > div > div > a > div > div > figure > figcaption > p {
-	font-size: 12px;
-	margin: -3px;
-}
-main > div > div > div > div > img {
-	float: top;
 }

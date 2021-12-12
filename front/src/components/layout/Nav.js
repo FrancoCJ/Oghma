@@ -1,29 +1,30 @@
 import navstyles from '../../styles/components/layout/style.Nav.css';
 import NavLink from	'../NavLink.js';
+import {} from "react-router-dom";
 const Nav = (props) => {
 	return (
 	<nav>
 		<div className="holder">
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="novedades.html">Novedades</a></li>
-			<li><a className="" href="guiainicio.html">Guía para nuevos jugadores</a></li>
+			<li><NavLink activeClassName="activo" exact to="/">Home</NavLink></li>
+			<li><NavLink activeClassName="activo" exact to="/Novedades">Novedades</NavLink></li>
+			<li><NavLink activeClassName="activo" exact to="/Guia">Guía para nuevos jugadores</NavLink></li>
 			<li>
 				<div className="dropdown">
-  					<a href="reglas.html">Reglas del juego</a>
+  					<NavLink activeClassName="activo" exact to="/Reglas">Reglas del juego</NavLink>
  		 				<div className="dropdown-content">
-						    <a href="#">Hechizos</a>
-						    <a href="#">Razas</a>
-						    <a href="#">Clases</a>
-						    <a href="#">Equipo</a>
-						    <a href="#">Dotes</a>
-						    <a href="#">Trasfondos</a>
-						    <a href="#">Objetos mágicos y equipamiento</a>
-						    <a href="#">Monstruos y NPCs</a>
+						    <a>Hechizos</a>
+						    <a>Razas</a>
+						    <a>Clases</a>
+						    <a>Equipo</a>
+						    <a>Dotes</a>
+						    <a>Trasfondos</a>
+						    <a>Objetos mágicos y equipamiento</a>
+						    <a>Monstruos y NPCs</a>
 			  			</div>
 				</div> 
 			</li> 
-			<li><a href="contacto.html">Contacto</a></li>
+			<li><NavLink activeClassName="activo" exact to="/Contacto">Contacto</NavLink></li>
 		</ul>
 		</div>
 	</nav>
