@@ -10,17 +10,17 @@ const Nav = (props) => {
 			<li><NavLink activeClassName="activo" exact to="/Novedades">Novedades</NavLink></li>
 			<li><NavLink activeClassName="activo" exact to="/Guia">Guía para nuevos jugadores</NavLink></li>
 			<li>
-				<div className="dropdown">
-  					<NavLink activeClassName="activo" exact to="/Reglas">Reglas del juego</NavLink>
- 		 				<div className="dropdown-content">
-						    <a>Hechizos</a>
-						    <a>Razas</a>
-						    <a>Clases</a>
-						    <a>Equipo</a>
-						    <a>Dotes</a>
-						    <a>Trasfondos</a>
-						    <a>Objetos mágicos y equipamiento</a>
-						    <a>Monstruos y NPCs</a>
+			<div class="dropdown">
+			<NavLink activeClassName="activo" exact to="/Reglas">Reglas del juego</NavLink>
+ 		 				<div class="dropdown-content">
+						    <a href="#">Hechizos</a>
+						    <a href="#">Razas</a>
+						    <a href="#">Clases</a>
+						    <a href="#">Equipo</a>
+						    <a href="#">Dotes</a>
+						    <a href="#">Trasfondos</a>
+						    <a href="#">Objetos mágicos y equipamiento</a>
+						    <a href="#">Monstruos y NPCs</a>
 			  			</div>
 				</div> 
 			</li> 

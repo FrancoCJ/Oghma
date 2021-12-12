@@ -5,13 +5,11 @@ header .holder{
 	height: 175px;
 	width: 960px;
 	margin: 0 auto;
-	  position: relative;
-  left: 10px;
-  right: 0;
-  z-index: 99;
+	position: relative;
+  	z-index: 99;
 
 }
-h1{
+header h1{
 	color: #9C7127;
 	font-size: 3em;
 	font-style: italic;
@@ -22,13 +20,13 @@ h1{
 	text-shadow: 1px 1px #519AE8;
 	padding-top: 10px;
 }
-img{
+header img{
 	float: left;
 	padding-top: 10px;
 	padding-left: 20px;
 	padding-right: 5px;
 }
-h3{
+header h3{
 	display: inline-block;
 	position: relative;
 	bottom: 100px;
@@ -38,29 +36,4 @@ h3{
 header .busqueda{
 	float: right;
 	padding-right: 12px;
-}
-main {
-	background-color: #ccc;
-	clear: both;
-	color: #333;
-	width: 960px;
-	margin: 0 auto;
-	min-height : 70vh;
-}
-main div div.contenedor-flex2{
-	display: flex;
-	margin: auto;
-	border:solid;
-	width: 360px;
-	padding: 10px;
-	background-color: whitesmoke;
-	flex-direction: row;
-	justify-content: center;
-}
-main > div > div > a > div > div > figure > figcaption > p {
-	font-size: 12px;
-	margin: -3px;
-}
-main > div > div > div > div > img {
-	float: top;
 }

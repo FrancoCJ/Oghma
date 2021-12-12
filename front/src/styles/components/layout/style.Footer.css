@@ -6,9 +6,7 @@ footer .holder{
 	text-align: center;
 	width: 960px;
 	margin: 0 auto;
-	  position: relative;
-  left: 10px;
-  right: 0;
-  z-index: 99;
+	position: relative;
+	z-index: 99;
 
 }
