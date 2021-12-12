@@ -1,7 +1,7 @@
 import style from '../styles/components/pages/style.Reglas.css';
 const Reglas = (props) => {
 	return (
-		<main class="holder">
+		<main className="Reglas">
 			<div>
 				<div className="botones">
 					<a>

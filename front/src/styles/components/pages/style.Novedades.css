@@ -1,0 +1,9 @@
+div .Novedades > h1{
+    padding: 20% 25%;
+    min-height: 30vh;
+    width: 960px;
+}
+main{
+    margin:0 auto ;
+    margin-top: .3em;
+}

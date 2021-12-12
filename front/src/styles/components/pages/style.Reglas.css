@@ -1,10 +1,11 @@
-main {
+main .Reglas{
 	background-color: #ccc;
 	clear: both;
 	color: #333;
 	width: 960px;
 	min-height : 70vh;
 	margin: 0 auto;
+  border: 3px;
 	
 }
 .botones {
