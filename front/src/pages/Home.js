@@ -2,8 +2,9 @@ import homepage from '../styles/components/pages/style.HomePage.css';
 
 const Home = (props) => {
 	return (
-<main classNameName="holder">
+<main className="holder">
 		<div className="text">
+		<img src={process.env.PUBLIC_URL +"RNNum6K.jpg"} width="40%"></img>
 			<h2>El templo de Oghma</h2>
 			<p>Nuestro objetivo aquí en el templo de Oghma es acercar de manera simple y  concisa uno de los juegos de rol de mesa mas grandes y conocidos del mundo, Dungeons & Dragons.
 			Aquí podrán encontrar todo el contenido oficial al alcance y organizado de manera fácil de leer y utilizar.

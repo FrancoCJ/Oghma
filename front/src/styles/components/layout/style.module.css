@@ -45,6 +45,7 @@ body{
 	background-color: #17579C;
 	padding: 0.3em 0;
 	height: 135px;
+  margin: 0 auto;
 }
 h1{
 	color: #9C7127;
@@ -69,14 +70,8 @@ h3{
 	bottom: 40px;
 	padding-top: 10px;
 }
-.holder{
-	background-color: #FFCC73;
-	padding-bottom: 1em;
-	padding-top: 1em;
-	overflow: hidden;
-	white-space: no wrap;
-	text-align: center;
-}
+
+
 .holder ul{
 	list-style: none;
 	margin: 0;

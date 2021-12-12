@@ -4,7 +4,7 @@ const Header = (props) => {
 		
 		<header><div className="nav">
 			<div className="holder">
-			<img src={process.env.PUBLIC_URL +"favicon.png"} width="100" alt="Beholder"></img>
+			<img src={`${process.env.PUBLIC_URL}favicon.png`} width="100" alt="Beholder"></img>
 			<h1>El Templo de Oghma</h1><br></br>
 			<h3>Un lugar de aprendizaje</h3>
 			<div className="busqueda">

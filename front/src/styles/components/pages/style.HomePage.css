@@ -1,16 +1,4 @@
-main .holder{
-	align-content: center;
-	background-color: #17579C;
-	padding: 0.3em 0;
-	height: 175px;
-	width: 96px;
-	margin: 10 10 10 10 ;
-	position: relative;
-	left: 100px;
-	right: 500;
-	z-index: 99;
 
-}
 h1{
 	color: #9C7127;
 	font-size: 3em;
@@ -40,9 +28,10 @@ main {
 	background-color: #ccc;
 	clear: both;
 	color: #333;
-	width: 96px;
+	width: 960px;
 	margin: 0 auto;
 	min-height : 70vh;
+	
 }
 main div div.contenedor-flex2{
 	display: flex;
@@ -53,4 +42,10 @@ main div div.contenedor-flex2{
 	background-color: whitesmoke;
 	flex-direction: row;
 	justify-content: center;
+}
+
+main div img {
+	float:right; 
+	margin-bottom: 0.3em;
+	background-color: #ccc;
 }
