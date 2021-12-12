@@ -1,4 +1,4 @@
-import homepage from '../styles/components/pages/style.HomePage.css';
+import HomePage from '../styles/components/pages/style.HomePage.css';
 
 const Home = (props) => {
 	return (

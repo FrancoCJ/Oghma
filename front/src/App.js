@@ -19,11 +19,11 @@ function App() {
         <Header/>
         <Nav/>
         <Routes>
-          <Route path="/" exact element= {<Home />}/>
-          <Route path="/Novedades" exact component= {<Novedades />}/>
-          <Route path="/Guia" exact component= {<Guia />}/>
-          <Route path="/Reglas" exact component= {<Reglas />}/>
-          <Route path="/Contacto" exact component= {<Contacto />}/>
+          <Route path="/" exact element= {<Home/>}/>
+          <Route path="/Novedades" exact component= {<Novedades/>}/>
+          <Route path="/Guia" exact component= {<Guia/>}/>
+          <Route path="/Reglas" exact component= {<Reglas/>}/>
+          <Route path="/Contacto" exact component= {<Contacto/>}/>
         </Routes>
         <Footer />
       </Router>
