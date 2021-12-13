@@ -57,7 +57,7 @@ const Reglas = (props) => {
 					<a>
 					<div className="box box1">
 							<div className="text">
-								<img src={`${process.env.PUBLIC_URL}hechizos.png`}></img>
+								<img src={`${process.env.PUBLIC_URL}magic.png`}></img>
 								<p>Objetos mágicos</p>
 							</div>
 						</div>

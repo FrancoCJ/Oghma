@@ -34,6 +34,7 @@ main .Reglas{
   overflow-wrap: break-word;
   width: 111px;
   align-items:center;
+  flex-direction: column;
   
   }
 .botones{
