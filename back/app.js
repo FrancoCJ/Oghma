@@ -12,7 +12,7 @@ var novedadesRouter = require('./routes/novedades');
 var guiaRouter = require('./routes/guia');
 var reglasRouter = require('./routes/reglas');
 var contactoRouter = require('./routes/contacto');
-
+var adminRouter = require('./routes/admin/login');
 
 
 var app = express();
@@ -32,6 +32,7 @@ app.use('/novedades', novedadesRouter);
 app.use('/guia', guiaRouter);
 app.use('/reglas', reglasRouter);
 app.use('/contacto', contactoRouter);
+app.use('/admin/login', adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
