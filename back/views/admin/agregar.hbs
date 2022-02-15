@@ -1,0 +1,22 @@
+<dir class="container" style="margin:100px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Agregar novedad</h4>
+            <form action="/admin/novedades/agregar" method="post" style="display: inline-block;">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="titulo" placeholder="Titulo">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subtitulo" placeholder="Subtitulo">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="cuerpo" placeholder="Cuerpo">
+                </div>
+                <button type="submit" class="btn btn-primary" style="display: inline-flex">Guardar</button>
+            </form>
+            {{#if error}}
+                <h5>{{message}}</h5>
+            {{/if}}
+        </div>
+    </div>
+</dir>
