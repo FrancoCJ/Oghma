@@ -6,13 +6,14 @@ var logger = require('morgan');
 var session = require('express-session')
 require('dotenv').config();
 var pool = require('./models/bd');
-
-
-
+var cors = require('cors');
+var apiRouter = require('./routes/api');
 var indexRouter = require('./routes/index');
 var loginRouter = require('./routes/admin/login');
 var novedadesRouter = require('./routes/admin/novedades');
 var usersRouter = require('./routes/users');
+const req = require('express/lib/request');
+var fileUpload = require('express-fileupload');
 
 
 var app = express();
@@ -29,11 +30,18 @@ app.use((req, res, next) => {
   }
   next()
 })
+
+app.use('/api', cors(), apiRouter);
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(fileUpload({
+  useTempFiles: true,
+  tempFileDir: '/tmp/'
+}));
 
 app.use(session({
   secret: 'ZWxzZWNyZXRvZXNtdXlzZWNyZXRvcm9iYW5kb2Nvc2FzZGVzZGVmcmVzZW5pdXM',
