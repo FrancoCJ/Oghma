@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-6 offset-3">
             <h4>Modificar novedad</h4>
-            <form action="/admin/novedades/modificar" method="post" style="display: inline-block;">
+            <form action="/admin/novedades/modificar"  enctype="multipart/form-data" method="post" style="display: inline-block;">
                  <div class="form-group">
                     <input type="text" class="form-control" value="{{novedad.id}}" name="id" placeholder="id">
                 </div>

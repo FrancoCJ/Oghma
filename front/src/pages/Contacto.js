@@ -1,4 +1,4 @@
-import style from '../styles/components/pages/style.Contacto.css';
+import '../styles/components/pages/style.Contacto.css';
 
 const Contacto = (props) => {
 	return (

@@ -1,4 +1,4 @@
-import '../styles/components/pages/style.Guia.css';
+import style from  '../styles/components/pages/style.guia.css';
 const HomePage = (props) => {
 	return (
 <main>
