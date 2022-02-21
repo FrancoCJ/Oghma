@@ -28,11 +28,11 @@ router.get('/novedades', async function (req, res, next){
     res.json(novedades);
 });
 
-router.post('/Contacto', async (req, res) => {
+router.post('/contacto', async (req, res) => {
     const mail = {
         to: 'Oghma',
         subject: 'Contacto web',
-        html: `${req.body.nombre} queria hacerle saber que ${req.body.mensaje} y que lo puede contactar en ${req.body.correo}`
+        html: `${req.body.nombre} queria hacerle saber que ${req.body.mensaje} y que lo puede contactar en ${req.body.email}`
     }
     const transport = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
