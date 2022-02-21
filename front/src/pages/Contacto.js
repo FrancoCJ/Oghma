@@ -1,4 +1,4 @@
-import '../styles/components/pages/style.Contacto.css';
+import style from '../styles/components/pages/style.Contacto.css';
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -25,7 +25,6 @@ const Contacto = (props) => {
 		setMsg('');
 		setSending(true)
 		const response = await
-		console.log(formData)
 		axios.post('http://localhost:3000/api/contacto', formData);
 		setSending(false);
 		setMsg(response.data.message);
@@ -33,10 +32,10 @@ const Contacto = (props) => {
 			setFormData(initialForm)
 		}
 	}
-
 	return (
 		<main className='holderContacto'>
 			<div className='formContacto'>
+
 				<h2>Contacto</h2>
 				<form action="/contacto" method="post" className='formulario' onSubmit={handleSubmit}>
 					<p>
@@ -45,7 +44,7 @@ const Contacto = (props) => {
 					</p>
 					<p>
 						<label for="email">Email</label><br/>
-						<input type="text" name="email" value={formData.email} onChange={handleChange}/>
+						<input type="email" name="email" value={formData.email} onChange={handleChange}/>
 					</p>
 					<p>
 						<label for="mensaje">Comentario</label> <br/>
@@ -53,12 +52,11 @@ const Contacto = (props) => {
 					</p>
 					{sending ? <p>Enviando...</p> : null}
 					{msg ? <p>{msg}</p> : null}
-					<p className='centrar'><input type="submit" value="Enviar" /></p>
+					<p className='centrar'><input type="submit" value="Enviar"  /></p>
 				</form>
 			</div>
 		</main>
 	)
 }
-
 export default Contacto;
 
